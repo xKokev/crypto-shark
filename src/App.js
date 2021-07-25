@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import imagen from './cryptomonedas.png';
+import imagen from './sharky.png';
 import Formulario from './components/Formulario';
 import Cotizacion from './components/Cotizacion';
 import Spinner from './components/Spinner';
@@ -28,13 +28,6 @@ const Heading = styled.h1`
   font-size: 50px;
   margin-bottom: 50px;
   margin-top: 80px;
-  &::after {
-    content: '';
-    width: 100px;
-    height: 6px;
-    background-color: #66a2fe;
-    display: block;
-  }
 `;
 
 function App() {
@@ -81,7 +74,7 @@ function App() {
         <Imagen src={imagen} alt='imagen cripto' />
       </div>
       <div>
-        <Heading>Cotiza Criptomonedas al Instante</Heading>
+        <Heading>🦈 Crypto-Shark </Heading>
 
         <Formulario
           guardarMoneda={guardarMoneda}

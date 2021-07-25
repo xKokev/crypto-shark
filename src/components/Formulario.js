@@ -29,18 +29,28 @@ const Formulario = ({ guardarMoneda, guardarCriptomoneda }) => {
   const [error, guardarError] = useState(false);
 
   const MONEDAS = [
-    { codigo: 'USD', nombre: 'Dolar de Estados Unidos' },
-    { codigo: 'MXN', nombre: 'Peso Mexicano' },
-    { codigo: 'EUR', nombre: 'Euro' },
-    { codigo: 'GBP', nombre: 'Libra Esterlina' },
+    { codigo: 'USD', nombre: '🇺🇸 U.S. dollar' },
+    { codigo: 'EUR', nombre: '🇪🇺 Euro' },
+    { codigo: 'CAD', nombre: '🇨🇦 Canadian dollar' },
+    { codigo: 'GBP', nombre: '🏴󠁧󠁢󠁥󠁮󠁧󠁿 Pound sterling' },
+    { codigo: 'ILS', nombre: '🇮🇱 Israeli shekel' },
+    { codigo: 'AED', nombre: '🇦🇪 Dírham' },
+    { codigo: 'AED', nombre: '🇦🇺 Australian dollar' },
+    { codigo: 'JPY', nombre: '🇯🇵 Japanese Yen' },
+    { codigo: 'CNY', nombre: '🇨🇳 Yuan' },
+    { codigo: 'MXN', nombre: '🇲🇽 Mexican peso' },
   ];
 
   // Utilizar useMoneda
-  const [moneda, SelectMonedas] = useMoneda('Elige tu Moneda', '', MONEDAS);
+  const [moneda, SelectMonedas] = useMoneda(
+    'Choose your Currency',
+    '',
+    MONEDAS
+  );
 
   // utilizar useCriptomoneda
   const [criptomoneda, SelectCripto] = useCriptomoneda(
-    'Elige tu Criptomoneda',
+    'Choose your Cryptocurrency',
     '',
     listacripto
   );
@@ -76,13 +86,13 @@ const Formulario = ({ guardarMoneda, guardarCriptomoneda }) => {
 
   return (
     <form onSubmit={cotizarMoneda}>
-      {error ? <Error mensaje='Todos los campos son obligatorios' /> : null}
+      {error ? <Error mensaje='All fields are required' /> : null}
 
       <SelectMonedas />
 
       <SelectCripto />
 
-      <Boton type='submit' value='Calcular' />
+      <Boton type='submit' value='Calculate' />
     </form>
   );
 };
