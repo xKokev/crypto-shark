@@ -71,7 +71,7 @@ function App() {
   return (
     <Contenedor>
       <div>
-        <Imagen src={imagen} alt='imagen cripto' />
+        <Imagen src={imagen} alt='sharkbaby' />
       </div>
       <div>
         <Heading>🦈 Crypto-Shark </Heading>
