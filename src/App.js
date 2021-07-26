@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import imagen from './zzz.png';
+// import imagen from './zzz.png';
 import Formulario from './components/Formulario';
 import Cotizacion from './components/Cotizacion';
 import Spinner from './components/Spinner';
@@ -71,7 +71,7 @@ function App() {
   return (
     <Contenedor>
       <div>
-        <Imagen src={imagen} alt='sharkbaby' />
+        <Imagen src='./zzz.png' alt='sharkbaby' />
       </div>
       <div>
         <Heading>🦈 Crypto-Shark </Heading>
