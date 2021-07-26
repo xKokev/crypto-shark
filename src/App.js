@@ -79,9 +79,7 @@ function App() {
         {/*   <Imagen src={imagen} alt='sharkbaby' />*/}
         <img
           src='https://picsum.photos/id/237/ff/354'
-          onError={(e) =>
-            (e.target.src = 'https://picsum.photos/id/40/400/400')
-          }
+          onError={(e) => (e.target.src = 'https://i.imgur.com/ndnu53g.png')}
           alt='gpd'
         />
       </div>
