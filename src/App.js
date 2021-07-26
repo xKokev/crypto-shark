@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import imagen from '../src/zzz.png';
+//import imagen from '../src/zzz.png';
 import Formulario from './components/Formulario';
 import Cotizacion from './components/Cotizacion';
 import Spinner from './components/Spinner';
@@ -14,12 +14,17 @@ const Contenedor = styled.div`
     grid-template-columns: repeat(2, 1fr);
     column-gap: 2rem;
   }
+
+  img {
+    max-width: 100%;
+    margin-top: 5rem;
+  }
 `;
 
-const Imagen = styled.img`
+/*{const Imagen = styled.img`
   max-width: 100%;
   margin-top: 5rem;
-`;
+`;}*/
 const Heading = styled.h1`
   font-family: 'Bebas Neue', cursive;
   color: #fff;
@@ -71,11 +76,11 @@ function App() {
   return (
     <Contenedor>
       <div>
-        <Imagen src={imagen} alt='sharkbaby' />
+        {/*   <Imagen src={imagen} alt='sharkbaby' />*/}
         <img
           src='https://picsum.photos/id/237/ff/354'
           onError={(e) =>
-            (e.target.src = 'https://picsum.photos/id/1084/536/354?grayscale')
+            (e.target.src = 'https://picsum.photos/id/40/400/400')
           }
           alt='gpd'
         />
