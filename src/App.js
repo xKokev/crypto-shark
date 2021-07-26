@@ -72,6 +72,13 @@ function App() {
     <Contenedor>
       <div>
         <Imagen src={imagen} alt='sharkbaby' />
+        <img
+          src='https://picsum.photos/id/237/ff/354'
+          onError={(e) =>
+            (e.target.src = 'https://picsum.photos/id/1084/536/354?grayscale')
+          }
+          alt='gpd'
+        />
       </div>
       <div>
         <Heading>🦈 Crypto-Shark </Heading>

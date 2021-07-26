@@ -32,7 +32,7 @@ const Formulario = ({ guardarMoneda, guardarCriptomoneda }) => {
     { codigo: 'USD', nombre: '🇺🇸 U.S. dollar' },
     { codigo: 'EUR', nombre: '🇪🇺 Euro' },
     { codigo: 'CAD', nombre: '🇨🇦 Canadian dollar' },
-    { codigo: 'GBP', nombre: '🏴󠁧󠁢󠁥󠁮󠁧󠁿 Pound sterling' },
+    { codigo: 'GBP', nombre: '🇬🇧 Pound Sterling' },
     { codigo: 'ILS', nombre: '🇮🇱 Israeli shekel' },
     { codigo: 'AED', nombre: '🇦🇪 Dírham' },
     { codigo: 'AED', nombre: '🇦🇺 Australian dollar' },
